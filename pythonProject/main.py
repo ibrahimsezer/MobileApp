@@ -1,3 +1,11 @@
+
+############################################################
+#-------Terminal üzerinden kurmamız gereken modüller -------
+#pip install googletrans==4.0.0-rc1
+#pip install kivy
+#pip install pandas
+############################################################
+
 from kivy.app import App
 from kivy.uix.widget import Widget
 import googletrans
