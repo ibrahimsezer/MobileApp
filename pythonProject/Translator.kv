@@ -1,0 +1,61 @@
+MainWidget:
+
+<MainWidget>:
+
+    Label:
+        size:150,75
+        pos:50,500
+        text:"Çevirilecek dil :"
+    BoxLayout:
+        pos:250,500
+        padding:10,10,10,10
+    TextInput:
+        text:"Cümlenizi giriniz."
+        multiline:False
+        on_text_validate:True
+        pos:10,400
+        size:250,75
+    Label:
+        text:"Çevirisi"
+        size:150,75
+        pos:270,400
+
+<BoxLayout>:
+
+    Button:
+        id:btn_almanca
+        on_press:callback
+        text:"Almanca"
+        color:255,0,0,
+        size:75,25
+        size_hint_x:None
+
+    Button:
+        text:"İngilizce"
+        color:255,0,0,
+        size:75,25
+        size_hint_x:None
+
+    Button:
+        text:"Fransızca"
+        color:255,0,0,
+        size:75,25
+        size_hint_x:None
+
+    Button:
+        text:"İspanyolca"
+        color:255,0,0,
+        size:75,25
+        size_hint_x:None
+
+    Button:
+        text:"Japonca"
+        color:255,0,0,
+        size:75,25
+        size_hint_x:None
+
+    Button:
+        text:"İtalyanca"
+        color:255,0,0,
+        size:75,25
+        size_hint_x:None
