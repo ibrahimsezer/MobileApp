@@ -1,61 +1,68 @@
 MainWidget:
 
+<BoxLayout>:
+    orientation : "vertical"
+    button:
+
 <MainWidget>:
 
+
+
+    Image:
+        source:'BSTv1.0.0.png'
+        size:360,640
+        pos_hint:.5,.5
+        size_hint:.5,.5
     Label:
-        size:150,75
-        pos:50,500
-        text:"Çevirilecek dil :"
-    BoxLayout:
-        pos:250,500
-        padding:10,10,10,10
+        text:"BST v1.0.0"
+        pos:125,500
+        size_hint_x:None
+        size_hint_y:None
+    Button:
+        text:"F"
+        pos:40,450
+        size:50,50
+    Button:
+        text:"L"
+        pos:40,400
+        size:50,50
+    Button:
+        text:"Çevirilecek Dil Seçin."
+        pos:150,400
+        size:150,50
     TextInput:
-        text:"Cümlenizi giriniz."
-        multiline:False
-        on_text_validate:True
-        pos:10,400
-        size:250,75
+        text:"Metin Giriniz."
+        pos:50,325
+        size:250,50
+    Button:
+        text:"Çeviri Yap"
+        pos:150,250
+        size:75,50
     Label:
-        text:"Çevirisi"
-        size:150,75
-        pos:270,400
-
-<BoxLayout>:
-
+        text:"Kaynak dil -->"
+        pos:40,200
+        size:75,50
+    Label:
+        text:"Hedef dil -->"
+        pos:40,150
+        size:75,50
+    Label:
+        text:"Girilen Metin"
+        pos:200,200
+        size:100,50
+    Label:
+        text:"Dönüştürülen Metin"
+        pos:200,150
+        size:100,50
     Button:
-        id:btn_almanca
-        on_press:callback
-        text:"Almanca"
-        color:255,0,0,
-        size:75,25
-        size_hint_x:None
-
+        text:"Favori kelime"
+        pos:75,100
+        size:100,50
     Button:
-        text:"İngilizce"
-        color:255,0,0,
-        size:75,25
-        size_hint_x:None
+        text:"Listeme ekle"
+        pos:200,100
+        size:100,50
 
-    Button:
-        text:"Fransızca"
-        color:255,0,0,
-        size:75,25
-        size_hint_x:None
 
-    Button:
-        text:"İspanyolca"
-        color:255,0,0,
-        size:75,25
-        size_hint_x:None
 
-    Button:
-        text:"Japonca"
-        color:255,0,0,
-        size:75,25
-        size_hint_x:None
 
-    Button:
-        text:"İtalyanca"
-        color:255,0,0,
-        size:75,25
-        size_hint_x:None
